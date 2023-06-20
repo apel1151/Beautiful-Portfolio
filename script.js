@@ -36,3 +36,26 @@ tabs.forEach( (tab, index)=>{
 
      
 })
+
+
+ScrollReveal({ 
+    reset: true,
+    distance: "80px",
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.hero', { origin: "right"});
+ScrollReveal().reveal('.aboutInfo p', { origin: "left"});
+ScrollReveal().reveal('.aboutInfo .imgShape', { origin: "right"});
+ScrollReveal().reveal('.skills', { origin: "bottom"});
+ScrollReveal().reveal('.experience h1', { origin: "top"});
+ScrollReveal().reveal('.tab_box', { origin: "left"});
+ScrollReveal().reveal('.tab_content', { origin: "right"});
+ScrollReveal().reveal('.projects h1', { origin: "top"});
+ScrollReveal().reveal('.one', { origin: "left"});
+ScrollReveal().reveal('.two', { origin: "right"});
+ScrollReveal().reveal('.three', { origin: "bottom"});
+ScrollReveal().reveal('.navWrapper', { origin: "top"});
+ScrollReveal().reveal('.socialIcons', { origin: "top"});
+ScrollReveal().reveal('.email', { origin: "bottom"});

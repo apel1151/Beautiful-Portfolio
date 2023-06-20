@@ -248,7 +248,7 @@ html{
 }
 
 .skills .row ul li{
-    color: green;
+    color: rgb(22, 196, 22);
     list-style: none;
     padding: 5px;
 }
@@ -550,7 +550,7 @@ html{
  }
 
 
-@media all and (max-width: 760px){
+@media all and (max-width: 400px){
     header .btnn{
         display: block;
     }
@@ -566,7 +566,12 @@ html{
         transition: 0.5s;
         transition-property: right;
     }
-
+    
+    .section1{
+  
+        width: 100%;
+    
+    }
     .menuItem.active{
         right: 0;
     }
