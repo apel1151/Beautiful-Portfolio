@@ -45,7 +45,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.hero', { origin: "right"});
+ScrollReveal().reveal('.hero', { origin: "left"});
 ScrollReveal().reveal('.aboutInfo p', { origin: "left"});
 ScrollReveal().reveal('.aboutInfo .imgShape', { origin: "right"});
 ScrollReveal().reveal('.skills', { origin: "bottom"});
