@@ -59,3 +59,5 @@ ScrollReveal().reveal('.three', { origin: "bottom"});
 ScrollReveal().reveal('.navWrapper', { origin: "top"});
 ScrollReveal().reveal('.socialIcons', { origin: "top"});
 ScrollReveal().reveal('.email', { origin: "bottom"});
+ScrollReveal().reveal('.box1', { origin: "left"});
+ScrollReveal().reveal('.box2', { origin: "right"});
