@@ -61,3 +61,6 @@ ScrollReveal().reveal('.socialIcons', { origin: "top"});
 ScrollReveal().reveal('.email', { origin: "bottom"});
 ScrollReveal().reveal('.box1', { origin: "left"});
 ScrollReveal().reveal('.box2', { origin: "right"});
+ScrollReveal().reveal('.contact-info', { origin: "left"});
+ScrollReveal().reveal('.contact-form', { origin: "right"});
+ScrollReveal().reveal('.footer', { origin: "bottom"});

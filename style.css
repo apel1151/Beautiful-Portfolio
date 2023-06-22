@@ -246,6 +246,11 @@ html{
     right: 15px;
     border-radius: 7px;
 }
+.about .skills .row{
+    width: 600px;
+    position: absolute;
+    top: -90px;
+}
 
 .skills .row ul li{
     color: rgb(22, 196, 22);
@@ -430,11 +435,25 @@ html{
     margin: 100px 0px 0px 0px;
     min-height: auto;
 }
+.skills h2{
+    position: relative;
+}
+.skills h2::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2.5px;
+    background-color: var(--light-green);
+    position: absolute;
+    margin-left: 10rem;
+    bottom: 15px;
+    opacity: .5;
+ }
 
 .skills .skills-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem;
     margin-top: 90px;
     margin-left: 50px;
 }
@@ -450,25 +469,26 @@ html{
 
 .skills-box .skills-content{
     position: relative;
-    border: .2rem solid rgb(22, 173, 173);
+    border: .2rem solid var(--light-green);
     border-radius: .6rem;
     padding: .5rem 1.5rem;
 }
 
 .skills-content .progres {
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 .skills-content .progres h3 {
     font-size: 1rem;
     display: flex;
     justify-content: space-between;
+    opacity: .7;
 }
 
 .skills-content .progres .bar{
     height: 1rem;
     border-radius: .3rem;
-    border: .1rem solid rgb(22, 173, 173);
+    border: .1rem solid green;
     padding: .2rem;
     margin: .5rem 0;
 }
@@ -477,7 +497,7 @@ html{
     display: block;
     height: 100%;
     border-radius: .1rem;
-    background: rgb(22, 173, 173);
+    background: green;
 }
 
 .skills-column:nth-child(1) .skills-content .progres:nth-child(1) .bar span {
@@ -490,7 +510,7 @@ html{
     width: 70%;
 }
 .skills-column:nth-child(1) .skills-content .progres:nth-child(4) .bar span {
-    width: 60%;
+    width: 65%;
 }
 .skills-column:nth-child(2) .skills-content .progres:nth-child(1) .bar span {
     width: 95%;
@@ -504,13 +524,6 @@ html{
 .skills-column:nth-child(2) .skills-content .progres:nth-child(4) .bar span {
     width: 60%;
 }
-
-
-
-
-
-
-
 
 
 
@@ -609,6 +622,166 @@ html{
     padding: 20px;
     font-size: 15px;
  }
+
+/*---------------Contact Section-------------------*/
+
+.contact{
+    margin-top: 150px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+  }
+  .contact h1{
+    color: white;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .contact h1::after{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2.5px;
+    background-color: var(--light-green);
+    position: absolute;
+    margin-left: 25rem;
+    bottom: 15px;
+    opacity: .5;
+ }
+
+  .row  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 50%;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 40px;
+    width: 40px;
+    background-color: rgb(12, 105, 12);
+    text-align: center;
+    border-radius: 30%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(3, 30, 3);
+  }
+  
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  
+  .contact-info-content h4 {
+    color: green;
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-content p {
+    color: var(--light-gray);
+    font-size: .9em;
+  }
+  
+  .contact-form {
+    padding: 40px;
+    width: 50%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 0 0 2rem 0 rgba(69, 236, 44, 0.2); 
+    border-radius: 5px;
+  }
+  
+  .contact-form h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: rgb(23, 117, 23);
+  }
+  
+  .contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .contact-form .input-box input,
+  .contact-form .input-box textarea{
+    width: 100%;
+    padding: 15px 0;
+    font-size: 13px;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    resize: none;
+    background-color: #03293f;
+    border-radius: 3px;
+    color: #a7a1a1;
+    margin-top: 15px;
+  }
+  
+  .contact-form .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 10px;
+    margin: 5px 0 0 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    color: green;
+  }
+  
+  .contact-form .input-box input:focus ~ span,
+  .contact-form .input-box textarea:focus ~ span{
+    color: green;
+    font-size: 10px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-form .input-box input[type="submit"]
+  {
+    width: 100%;
+    background: rgb(16, 103, 16);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 7px;
+  }
+  
+  .contact-form .input-box input[type="submit"]:hover
+{
+  background: #042436;
+  color: green;
+}
+
+
+/*---------------Footer Section-------------------*/
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-weight: 500;
+    margin-bottom: 70px;
+    letter-spacing: 3px;
+}
+
+
+
 
  @media all and (max-width: 350px){
     .projects{
