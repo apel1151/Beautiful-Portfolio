@@ -64,3 +64,4 @@ ScrollReveal().reveal('.box2', { origin: "right"});
 ScrollReveal().reveal('.contact-info', { origin: "left"});
 ScrollReveal().reveal('.contact-form', { origin: "right"});
 ScrollReveal().reveal('.footer', { origin: "bottom"});
+ScrollReveal().reveal('.contact h1', { origin: "top"});

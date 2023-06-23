@@ -246,13 +246,18 @@ html{
     right: 15px;
     border-radius: 7px;
 }
-.about .skills .row{
-    width: 600px;
+.about .skills{
     position: absolute;
-    top: -90px;
+    margin-top: 10px;
+}
+.about .skills .roww{
+    width: 600px;
+    display: flex;
+    
 }
 
-.skills .row ul li{
+
+.skills .roww ul li{
     color: rgb(22, 196, 22);
     list-style: none;
     padding: 5px;
@@ -405,18 +410,19 @@ html{
 }
 
 /*-----------------------------skills section--------------------------*/
-.misai4{
+.misai1{
+    padding-top: 100px;
+    position: relative;
+}
+.misai3{
     padding-top: 100px;
 }
 .misai2{
     padding-top: 100px;
 }
-.misai3{
-    padding-top: 100px;
-}
 
 .skills .misai{
-    padding-top: 150px;
+    padding-top: 200px;
 }
 .skills span{
     color: rgb(22, 173, 173);
@@ -469,7 +475,7 @@ html{
 
 .skills-box .skills-content{
     position: relative;
-    border: .2rem solid var(--light-green);
+    border: .2rem solid green;
     border-radius: .6rem;
     padding: .5rem 1.5rem;
 }
@@ -626,7 +632,7 @@ html{
 /*---------------Contact Section-------------------*/
 
 .contact{
-    margin-top: 150px;
+    margin-top: 200px;
     padding-top: 100px;
     margin-bottom: 80px;
     margin-left: 50px;
@@ -666,16 +672,16 @@ html{
   }
   
   .contact-info-icon {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     background-color: rgb(12, 105, 12);
     text-align: center;
     border-radius: 30%;
   }
   
   .contact-info-icon i {
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 35px;
     color: rgb(3, 30, 3);
   }
   
