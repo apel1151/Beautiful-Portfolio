@@ -3,13 +3,14 @@ window.addEventListener("scroll", function(){
     navWrapper.classList.toggle('sticky', window.scrollY > 0)
 })
 
-const menuItems = document.querySelector(".menuItem");
+const menuItems = document.querySelector(".menuLinks");
 const menuBtn = document.querySelector(".menuBtn");
 const closeBtn = document.querySelector(".closeBtn");
 
 
 menuBtn.addEventListener("click", () =>{
     menuItems.classList.add("active");
+    console.log("im clicked")
 })
 
 closeBtn.addEventListener("click", () => {
@@ -52,7 +53,7 @@ ScrollReveal().reveal('.skills', { origin: "bottom"});
 ScrollReveal().reveal('.experience h1', { origin: "top"});
 ScrollReveal().reveal('.tab_box', { origin: "left"});
 ScrollReveal().reveal('.tab_content', { origin: "right"});
-ScrollReveal().reveal('.projects h1', { origin: "top"});
+ScrollReveal().reveal('.projects h1', { origin: "bottom"});
 ScrollReveal().reveal('.one', { origin: "left"});
 ScrollReveal().reveal('.two', { origin: "right"});
 ScrollReveal().reveal('.three', { origin: "bottom"});
@@ -64,4 +65,16 @@ ScrollReveal().reveal('.box2', { origin: "right"});
 ScrollReveal().reveal('.contact-info', { origin: "left"});
 ScrollReveal().reveal('.contact-form', { origin: "right"});
 ScrollReveal().reveal('.footer', { origin: "bottom"});
-ScrollReveal().reveal('.contact h1', { origin: "top"});
+ScrollReveal().reveal('.contact h1', { origin: "bottom"});
+
+
+
+
+document.querySelector(".load-more .btn").onclick = () =>{
+    console.log("I am clicking")
+    document.querySelectorAll(".allProject .box-container .hide").forEach(show =>{
+      show.style.display = "block";
+    });
+    document.querySelector(".load-more .btn").style.display = "none";
+  }
+  
