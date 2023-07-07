@@ -769,6 +769,7 @@ html{
     height: 300px;
     width: 300px;
     transition: .5s;
+    cursor: pointer;
   }
   .allProject .box-container .box:hover{
     box-shadow: 20px 40px 40px rgba(70, 223, 116, 0.2);
