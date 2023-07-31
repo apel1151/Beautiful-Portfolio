@@ -850,7 +850,7 @@ html{
 @media (max-width: 450px){
     .navWrapper{
         padding: 70px 100px;
-        height: 100px;
+        height: 200px;
     }
     .logo{
         height: 90px;
@@ -886,7 +886,7 @@ html{
     font-size: 70px;
    }
    .about{
-    margin: 500px 100px 0px 100px;
+    margin: 550px 100px 0px 100px;
     width: 100%;
    }
    .about h1{
@@ -914,9 +914,13 @@ html{
     height: 900px;
     width: 900px;
    }
-   .about .skills{
-    margin-top: 50px;
-    margin-left: 250px;
+   .skills{
+    margin-top: 450px;
+    margin-left: 80px;
+   }
+   .about .skills ul{
+    margin-left: 150px;
+    margin-top: 80px;
    }
    .about .skills ul li{
     font-size: 60px;
@@ -937,10 +941,16 @@ html{
     margin-left: 100px;
    }
    .experience h1::after{
-    width: 250px;
+    width: 350px;
     height: 4px;
     margin-left: 42rem;
     bottom: 1.5rem;
+    }
+    .misai2 .tab_content{
+        margin-top: 80px;
+    }
+    .misai2 .tab_box{
+        margin-top: 90px;
     }
    .misai2 .tab_content h2{
     font-size: 90px;
@@ -970,11 +980,12 @@ html{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 150px;
 
    }
    .skills .skills-row .skills-column{
     width: 90%;
+    margin: 30px;
    }
    .misai .spanTitle{
     margin-left: 190px;
