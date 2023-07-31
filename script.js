@@ -41,9 +41,10 @@ tabs.forEach( (tab, index)=>{
 
 ScrollReveal({ 
     reset: true,
-    distance: "80px",
+    distance: "10px",
     duration: 2000,
-    delay: 200
+    delay: 200,
+    mobile: false
 });
 
 ScrollReveal().reveal('.hero', { origin: "left"});
