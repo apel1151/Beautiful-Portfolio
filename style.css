@@ -862,62 +862,70 @@ html{
     }
 
     .hero{
-        margin: 50px 100px 0px 0px;
+        margin: 400px 100px 0px 0px;
+        
     }
    .hero .heroContent{
        margin-left: 250px;   
    }
    .heroContent h4{
-    font-size: 50px;
+    font-size: 100px;
    }
    .heroContent h1{
-    font-size: 70px;
+    font-size: 150px;
+    margin-top: 50px;
    }
     .hero .myInfo{
-    width: 90%;
+    width: 100%;
    }
    .myInfo p{
-    font-size: 40px;
+    font-size: 70px;
+
    }
    .hero button{
-    font-size: 40px;
+    font-size: 70px;
+   }
+   .about{
+    margin: 500px 100px 0px 100px;
+    width: 100%;
    }
    .about h1{
     margin-left: 50px;
-    font-size: 60px;
+    font-size: 120px;
    }
    .about h1::after{
     height: 4px;
-    margin-left: 340px;
+    margin-left: 640px;
     bottom: 30px;  
    }
    .about .aboutInfo p{
     margin-left: 45px;
-    width: 85%;
-    font-size: 40px;
-    text-align: justify;
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
    }
    .about .aboutInfo .imgShape{
-    height: 700px;
-    width: 700px;
+    height: 900px;
+    width: 900px;
     margin-left: 150px;
    }
    .about .aboutInfo .imgShape img{
-    height: 700px;
-    width: 700px;
+    height: 900px;
+    width: 900px;
    }
    .about .skills{
     margin-top: 50px;
     margin-left: 250px;
    }
    .about .skills ul li{
-    font-size: 30px;
+    font-size: 60px;
    }
    .experience{
-    margin: 278px 192px 50px 87px;
+    margin: 678px 192px 50px 87px;
    }
    .experience .container{
-    width: 100%;
+    width: 90%;
    }
    .misai2{
     padding-top: 150px;
@@ -925,7 +933,7 @@ html{
     margin-left: 100px;
    }
    .misai2 h1{
-    font-size: 60px;
+    font-size: 100px;
     margin-left: 100px;
    }
    .experience h1::after{
@@ -935,21 +943,25 @@ html{
     bottom: 1.5rem;
     }
    .misai2 .tab_content h2{
-    font-size: 50px;
+    font-size: 90px;
    }
    .misai2 .tab_content h5{
-    font-size: 30px;
+    font-size: 60px;
+    margin-bottom: 30px;
    }
    .tabInfoFlex p{
-    font-size: 30px;
+    font-size: 60px;
     text-align: justify;
    }
    .arrow{
     height: 30px;
     width: 30px;
    }
+   .experience .container .tab_box .line{
+    margin-top: 150px;
+   }
    .experience .container .tab_box .tab_button{
-    font-size: 40px;
+    font-size: 50px;
    }
    .skills .misai{
     padding-top: 40px;
@@ -962,27 +974,27 @@ html{
 
    }
    .skills .skills-row .skills-column{
-    width: 80%;
+    width: 90%;
    }
    .misai .spanTitle{
     margin-left: 190px;
-    font-size: 60px;
+    font-size: 120px;
    }
    .skills h2::after{
     width: 290px;
     height: 4px;
-    margin-left: 30rem;
+    margin-left: 50rem;
     bottom: 15px;
    
   }
   .skills-row .title{
-    font-size: 40px;
+    font-size: 70px;
   }
   .skills-content .progres h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .skills span{
-    font-size: 30px;
+    font-size: 50px;
   }
 
 
