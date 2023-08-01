@@ -3,18 +3,17 @@ window.addEventListener("scroll", function(){
     navWrapper.classList.toggle('sticky', window.scrollY > 0)
 })
 
-const menuItems = document.querySelector(".menuLinks");
+const menuItems = document.querySelector(".menuItem");
 const menuBtn = document.querySelector(".menuBtn");
 const closeBtn = document.querySelector(".closeBtn");
 
 
 menuBtn.addEventListener("click", () =>{
-    menuItems.classList.add("active");
-    console.log("im clicked")
+    menuItems.classList.add("active1");
 })
 
 closeBtn.addEventListener("click", () => {
-    menuItems.classList.remove("active");
+    menuItems.classList.remove("active1");
 })
 
 

@@ -1,34 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body{
+body {
     font-family: 'Inter', sans-serif;
     background-color: #0a192f;
     transition: .5s;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --text-color: #ffffff;
     --light-green: rgb(144, 238, 144);
-    --light-gray: rgb(168,168,168);
+    --light-gray: rgb(168, 168, 168);
 }
 
 
-html{
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6.5rem;
 }
+
 /*---------------------------------Navbar------------------------------*/
-.logo{
+.logo {
     height: 40px;
     width: 40px;
 }
 
-.navWrapper{
+.navWrapper {
     position: fixed;
     display: flex;
     padding: 50px 80px;
@@ -39,36 +42,36 @@ html{
     z-index: 999;
     transition: all .9s ease;
 }
-.navWrapper.sticky{
+
+.navWrapper.sticky {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     /* -webkit-backdrop-filter: blur(10px); */
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
     padding: 30px 80px
-    
-}
-.navWrapper.sticky>.menuItem a{
-    color: white
 }
 
-.menuItem{
+.menuItem {
     margin-left: 390px;
 }
-.menuItem a{
+
+.menuItem a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     margin: 20px;
     color: rgb(117, 221, 117);
 }
-.menuItem a:hover{
+
+.menuItem a:hover {
     transition: 0.3s ease-in-out;
     color: rgb(144, 238, 144);
     outline: 4px dashed transparent;
 
 }
-.menuItem button{
+
+.menuItem button {
     background-color: #0a192f;
     color: lightgreen;
     border: 1px solid rgb(197, 240, 197);
@@ -76,31 +79,34 @@ html{
     width: 100px;
     border-radius: 5px;
 }
-.sticky>.menuItem button{
-   background-color: rgb(32, 70, 32);
-   color: white;
-   
+
+.sticky>.menuItem button {
+    background-color: rgb(32, 70, 32);
+    color: white;
+
 }
-.btnn1{
+
+.btnn1 {
     cursor: pointer;
-    display: none;   
+    display: none;
 }
-.menuBtn{
+
+.menuBtn {
     display: none;
 }
 
 /*-----------------------------------Left icons---------------------------*/
-.socialIcons{
-    position:fixed;
+.socialIcons {
+    position: fixed;
     bottom: 20px;
     left: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    
+
 }
 
-.socialIcons a:hover{
+.socialIcons a:hover {
     transform: translateY(-5px);
     transition: 0.3s ease-in-out;
     color: lightgreen;
@@ -108,7 +114,7 @@ html{
 
 }
 
-.socialIcons::after{
+.socialIcons::after {
     content: "";
     display: block;
     width: 2px;
@@ -120,28 +126,31 @@ html{
 
 /*-----------------right icons------------*/
 
-.email{
+.email {
     bottom: 0px;
     position: fixed;
     right: 4rem;
     display: flex;
     writing-mode: vertical-rl;
     margin-bottom: 10px;
-    
+
 }
-.email a{
+
+.email a {
     text-decoration: none;
     color: green;
     letter-spacing: .2rem;
 }
-.email a:hover{
+
+.email a:hover {
     transform: translateY(-5px);
     transition: 0.3s ease-in-out;
     color: lightgreen;
     outline: 4px dashed transparent;
 
 }
-.email::after{
+
+.email::after {
     content: "";
     display: block;
     width: 2px;
@@ -153,61 +162,68 @@ html{
 
 
 /*-----------------parent section------------*/
-.section1{
-   position: relative;
+.section1 {
+    position: relative;
 }
-.parentSection{
+
+.parentSection {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 150px;
     position: absolute;
     width: 70%;
-    
+
 }
 
 /*-----------------Hero section------------*/
 
-.hero{
-   margin: 100px 0px 0px 100px;
+.hero {
+    margin: 100px 0px 0px 100px;
 }
-.hero h4{
+
+.hero h4 {
     color: var(--light-green);
     font-size: 15px;
 }
-.hero h1{
+
+.hero h1 {
     color: #ffffff;
     font-size: 50px;
     font-weight: 700;
 }
-.hero p{
+
+.hero p {
     color: lightgray;
 }
-.hero .myInfo{
+
+.hero .myInfo {
     width: 60%;
 }
-.hero button{
-   padding: 10px;
-   border-radius: 8px;
-   background-color: #0a192f;
-   border: 1px solid lightgreen;
-   color: lightgreen;
+
+.hero button {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #0a192f;
+    border: 1px solid lightgreen;
+    color: lightgreen;
 }
 
 
 /*-----------------About section------------*/
 
-.about{
-    margin: 200px 0px 0px 100px; 
+.about {
+    margin: 200px 0px 0px 100px;
     width: 100%;
 }
-.about h1{
+
+.about h1 {
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     position: relative;
 }
 
-.about h1::after{
+.about h1::after {
     content: "";
     display: block;
     width: 250px;
@@ -219,19 +235,22 @@ html{
     opacity: .5;
 
 }
-.about .aboutInfo{
+
+.about .aboutInfo {
 
     display: flex;
     flex-direction: row;
     gap: 90px;
     width: 100%;
 }
-.about .aboutInfo p{
+
+.about .aboutInfo p {
     color: var(--light-gray);
     width: 60%;
     text-align: justify;
 }
-.about .aboutInfo .imgShape{
+
+.about .aboutInfo .imgShape {
     height: 400px;
     width: 400px;
     border: 2px solid var(--light-gray);
@@ -240,7 +259,8 @@ html{
     position: relative;
     border-radius: 7px;
 }
-.about .aboutInfo .imgShape img{
+
+.about .aboutInfo .imgShape img {
     height: 400px;
     width: 400px;
     z-index: 1;
@@ -249,18 +269,20 @@ html{
     right: 15px;
     border-radius: 7px;
 }
-.about .skills{
+
+.about .skills {
     position: absolute;
     margin-top: 10px;
 }
-.about .skills .roww{
+
+.about .skills .roww {
     width: 600px;
     display: flex;
-    
+
 }
 
 
-.skills .roww ul li{
+.skills .roww ul li {
     color: rgb(22, 196, 22);
     list-style: none;
     padding: 5px;
@@ -268,18 +290,19 @@ html{
 
 /*-----------------------------Experience section--------------------------*/
 
-.experience{
+.experience {
     margin: 200px 0px 0px 100px;
     width: 100%;
- }
- .experience h1{
+}
+
+.experience h1 {
     color: #ffffff;
     font-size: 30px;
     font-weight: 700;
     position: relative;
- }
+}
 
- .experience h1::after{
+.experience h1::after {
     content: "";
     display: block;
     width: 250px;
@@ -289,20 +312,23 @@ html{
     margin-left: 22rem;
     bottom: 10px;
     opacity: .5;
- }
- .experience .container{
+}
+
+.experience .container {
     width: 60%;
     margin-top: 50px;
- }
- .experience .container .tab_box{
+}
+
+.experience .container .tab_box {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 3px solid rgba(82, 124, 122, 0.1);
     position: relative;
- }
- .experience .container .tab_box .line{
+}
+
+.experience .container .tab_box .line {
     width: 90px;
     height: 3px;
     background-color: green;
@@ -311,8 +337,9 @@ html{
     margin-top: 49px;
     border-radius: 10px;
     transition: all .4s ease-in-out;
- }
- .experience .container .tab_box .tab_button{
+}
+
+.experience .container .tab_box .tab_button {
     font-size: 18px;
     font-weight: 600;
     color: green;
@@ -320,75 +347,96 @@ html{
     border: none;
     padding: 10px;
     cursor: pointer;
- }
- .experience .container .tab_box .tab_button.active{
-    color: var(--light-green);
- }
+}
 
-.content{
+.experience .container .tab_box .tab_button.active {
+    color: var(--light-green);
+}
+
+.content {
     padding-top: 50px;
     display: none;
     animation: moving .5s ease;
 }
+
 @keyframes moving {
-    from{transform: translateX(50px); opacity: 0;}
-    to{transform: translateX(0px); opacity: 1;}
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
-.content.active{
+
+.content.active {
     display: block;
 }
-.content h2{
+
+.content h2 {
     color: #ffffff;
     font-size: 25px;
 }
-.content h5{
+
+.content h5 {
     color: var(--light-gray);
     font-size: 16px;
 }
-.content .tabInfo .tabInfoFlex{
+
+.content .tabInfo .tabInfoFlex {
     display: flex;
 }
-.content .tabInfo .tabInfoFlex p{
+
+.content .tabInfo .tabInfoFlex p {
     color: var(--light-gray);
     margin-left: 15px;
 }
 
 /*-----------------------------skills section--------------------------*/
-.misai1{
+.misai1 {
     padding-top: 100px;
     position: relative;
 }
-.misai3{
-    padding-top: 100px;
-}
-.misai2{
+
+.misai3 {
     padding-top: 100px;
 }
 
-.skills .misai{
+.misai2 {
+    padding-top: 100px;
+}
+
+.skills .misai {
     padding-top: 200px;
 }
-.skills span{
+
+.skills span {
     color: rgb(22, 173, 173);
     font-size: 15px;
 
 }
-.skills .spanTitle{
+
+.skills .spanTitle {
     font-size: 25px;
 }
-.skills h3{
+
+.skills h3 {
     color: white;
     font-size: 15px;
 }
 
-.skills{
+.skills {
     margin: 100px 0px 0px 0px;
     min-height: auto;
 }
-.skills h2{
+
+.skills h2 {
     position: relative;
 }
-.skills h2::after{
+
+.skills h2::after {
     content: "";
     display: block;
     width: 250px;
@@ -398,7 +446,7 @@ html{
     margin-left: 10rem;
     bottom: 15px;
     opacity: .5;
- }
+}
 
 .skills .skills-row {
     display: flex;
@@ -408,7 +456,7 @@ html{
     margin-left: 50px;
 }
 
-.skills-row .skills-column{
+.skills-row .skills-column {
     flex: 1 1 25rem;
 }
 
@@ -417,7 +465,7 @@ html{
     margin: 0 0 1.5rem;
 }
 
-.skills-box .skills-content{
+.skills-box .skills-content {
     position: relative;
     border: .2rem solid green;
     border-radius: .6rem;
@@ -435,7 +483,7 @@ html{
     opacity: .7;
 }
 
-.skills-content .progres .bar{
+.skills-content .progres .bar {
     height: 1rem;
     border-radius: .3rem;
     border: .1rem solid green;
@@ -443,7 +491,7 @@ html{
     margin: .5rem 0;
 }
 
-.skills-content .progres .bar span{
+.skills-content .progres .bar span {
     display: block;
     height: 100%;
     border-radius: .1rem;
@@ -453,24 +501,31 @@ html{
 .skills-column:nth-child(1) .skills-content .progres:nth-child(1) .bar span {
     width: 90%;
 }
+
 .skills-column:nth-child(1) .skills-content .progres:nth-child(2) .bar span {
     width: 80%;
 }
+
 .skills-column:nth-child(1) .skills-content .progres:nth-child(3) .bar span {
     width: 70%;
 }
+
 .skills-column:nth-child(1) .skills-content .progres:nth-child(4) .bar span {
     width: 65%;
 }
+
 .skills-column:nth-child(2) .skills-content .progres:nth-child(1) .bar span {
     width: 95%;
 }
+
 .skills-column:nth-child(2) .skills-content .progres:nth-child(2) .bar span {
     width: 85%;
 }
+
 .skills-column:nth-child(2) .skills-content .progres:nth-child(3) .bar span {
     width: 80%;
 }
+
 .skills-column:nth-child(2) .skills-content .progres:nth-child(4) .bar span {
     width: 60%;
 }
@@ -479,18 +534,19 @@ html{
 
 /*-----------------------------projects section--------------------------*/
 
-.projects{
+.projects {
     margin-top: 100px;
 
 }
-.projects h1{
+
+.projects h1 {
     color: #ffffff;
     font-size: 35px;
     font-weight: 700;
     position: relative;
 }
 
-.projects h1::after{
+.projects h1::after {
     content: "";
     display: block;
     width: 250px;
@@ -500,42 +556,46 @@ html{
     margin-left: 30rem;
     bottom: 15px;
     opacity: .5;
- }
+}
 
- .projects .singleProjectContainer .singleProject .projectImg{
+.projects .singleProjectContainer .singleProject .projectImg {
     width: 650px;
     height: 350px;
     border-radius: 5px;
     z-index: -1;
- }
- 
- .singleProjectContainer{
+}
+
+.singleProjectContainer {
     margin-top: 50px;
     margin-left: 100px;
     width: 100%;
 
- }
- .singleProjectContainer div + div {
-    margin-top: 50px;
- }
- .singleProject{
-   width: 100%;
-   display: flex;
- }
+}
 
- .projectInfo{
+.singleProjectContainer div+div {
+    margin-top: 50px;
+}
+
+.singleProject {
+    width: 100%;
+    display: flex;
+}
+
+.projectInfo {
     margin-left: 30px;
     width: 50%;
     position: relative;
- }
- .projectInfo h3{
+}
+
+.projectInfo h3 {
     color: var(--text-color);
     display: flex;
     justify-content: flex-end;
     font-size: 17px;
     opacity: .7;
- }
- .projectInfo .quizDescription{
+}
+
+.projectInfo .quizDescription {
     background-color: #024166;
     z-index: 1;
     width: 500px;
@@ -544,50 +604,54 @@ html{
     margin-top: 30px;
     right: 5px;
 
-   }
+}
 
-   .projectInfo .ul{
+.projectInfo .ul {
     position: absolute;
     top: 130px;
     margin-left: 80px;
-   }
-   .projectInfo .ul ul li{
+}
+
+.projectInfo .ul ul li {
     list-style: none;
     color: var(--light-green);
     margin: 20px;
-   }
-   .projectInfo .liveLinks{
+}
+
+.projectInfo .liveLinks {
     display: flex;
     justify-content: flex-end;
-   
-   }
-   .projectInfo .liveLinks a{
-    margin: 15px;
-   }
 
- .projectInfo .quizDescription p{
+}
+
+.projectInfo .liveLinks a {
+    margin: 15px;
+}
+
+.projectInfo .quizDescription p {
     color: var(--light-gray);
     display: flex;
     text-align: center;
     padding: 20px;
     font-size: 15px;
- }
+}
 
 /*---------------Contact Section-------------------*/
 
-.contact{
+.contact {
     margin-top: 250px;
     padding-top: 100px;
     margin-bottom: 80px;
     margin-left: 50px;
-  }
-  .contact h1{
+}
+
+.contact h1 {
     color: white;
     position: relative;
     bottom: 50px;
-  }
+}
 
-  .contact h1::after{
+.contact h1::after {
     content: "";
     display: block;
     width: 250px;
@@ -597,77 +661,77 @@ html{
     margin-left: 25rem;
     bottom: 15px;
     opacity: .5;
- }
+}
 
-  .row  {
+.row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     width: 50%;
-  }
-  
-  .contact-info-item {
+}
+
+.contact-info-item {
     display: flex;
     margin-bottom: 30px;
-  }
-  
-  .contact-info-icon {
+}
+
+.contact-info-icon {
     height: 30px;
     width: 30px;
     background-color: rgb(12, 105, 12);
     text-align: center;
     border-radius: 30%;
-  }
-  
-  .contact-info-icon i {
+}
+
+.contact-info-icon i {
     font-size: 15px;
     line-height: 35px;
     color: rgb(3, 30, 3);
-  }
-  
-  .contact-info-content {
+}
+
+.contact-info-content {
     margin-left: 20px;
-  }
-  
-  .contact-info-content h4 {
+}
+
+.contact-info-content h4 {
     color: green;
     font-size: 1em;
     margin-bottom: 5px;
-  }
-  
-  .contact-info-content p {
+}
+
+.contact-info-content p {
     color: var(--light-gray);
     font-size: .9em;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
     padding: 40px;
     width: 50%;
     padding-bottom: 20px;
     padding-top: 20px;
-    box-shadow: 0 0 2rem 0 rgba(69, 236, 44, 0.2); 
+    box-shadow: 0 0 2rem 0 rgba(69, 236, 44, 0.2);
     border-radius: 5px;
-  }
-  
-  .contact-form h2 {
+}
+
+.contact-form h2 {
     font-weight: bold;
     font-size: 1.5em;
     margin-bottom: 10px;
     color: rgb(23, 117, 23);
-  }
-  
-  .contact-form .input-box {
+}
+
+.contact-form .input-box {
     position: relative;
     width: 100%;
     margin-top: 10px;
-  }
-  
-  .contact-form .input-box input,
-  .contact-form .input-box textarea{
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
     width: 100%;
     padding: 15px 0;
     font-size: 13px;
@@ -679,9 +743,9 @@ html{
     border-radius: 3px;
     color: #a7a1a1;
     margin-top: 15px;
-  }
-  
-  .contact-form .input-box span {
+}
+
+.contact-form .input-box span {
     position: absolute;
     left: 0;
     padding: 10px 0;
@@ -690,17 +754,16 @@ html{
     pointer-events: none;
     transition: 0.5s;
     color: green;
-  }
-  
-  .contact-form .input-box input:focus ~ span,
-  .contact-form .input-box textarea:focus ~ span{
+}
+
+.contact-form .input-box input:focus~span,
+.contact-form .input-box textarea:focus~span {
     color: green;
     font-size: 10px;
     transform: translateY(-20px);
-  }
-  
-  .contact-form .input-box input[type="submit"]
-  {
+}
+
+.contact-form .input-box input[type="submit"] {
     width: 100%;
     background: rgb(16, 103, 16);
     color: white;
@@ -709,18 +772,17 @@ html{
     font-size: 18px;
     transition: 0.5s;
     border-radius: 7px;
-  }
-  
-  .contact-form .input-box input[type="submit"]:hover
-{
-  background: #042436;
-  color: green;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+    background: #042436;
+    color: green;
 }
 
 
 /*---------------Footer Section-------------------*/
 
-.footer p{
+.footer p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -734,17 +796,18 @@ html{
 
 
 /*all projects sections------------------------*/
-.allProject{
+.allProject {
     margin-top: 200px;
     margin-left: 100px;
 }
-.allProject h1{
+
+.allProject h1 {
     color: white;
     position: relative;
     bottom: 50px;
-  }
+}
 
-  .allProject h1::after{
+.allProject h1::after {
     content: "";
     display: block;
     width: 250px;
@@ -754,14 +817,15 @@ html{
     margin-left: 25rem;
     bottom: 15px;
     opacity: .5;
- }
+}
+
 .allProject .box-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 1rem;
-  }
+}
 
-  .allProject .box-container .box {
+.allProject .box-container .box {
     padding: 1rem;
     text-align: center;
     border: 0.1rem solid #0eb582;
@@ -769,244 +833,332 @@ html{
     width: 300px;
     transition: .5s;
     cursor: pointer;
-  }
-  .allProject .box-container .box:hover{
+}
+
+.allProject .box-container .box:hover {
     box-shadow: 20px 40px 40px rgba(70, 223, 116, 0.2);
     transform: scale(1.05);
-  }
-  .allProject .box-container .box .allProjectInfo h2{
+}
+
+.allProject .box-container .box .allProjectInfo h2 {
     font-size: 25px;
     color: green;
     margin-top: 10px;
-  }
-  .allProject .box-container .box .allProjectInfo p{
+}
+
+.allProject .box-container .box .allProjectInfo p {
     color: var(--light-gray);
     font-size: 13px;
-  }
-  .allProject .box-container .box .allProjectInfo .tech{
+}
+
+.allProject .box-container .box .allProjectInfo .tech {
     display: flex;
     justify-content: space-between;
-    margin-top:60px; 
-  }
-  .allProject .box-container .box .allProjectInfo .tech p{
+    margin-top: 60px;
+}
+
+.allProject .box-container .box .allProjectInfo .tech p {
     color: var(--light-green);
-  }
-  
-  .allProject .box-container .hide {
+}
+
+.allProject .box-container .hide {
     display: none;
-   
-  }
-  
-  .allProject .load-more {
+
+}
+
+.allProject .load-more {
     margin-top: 2rem;
     text-align: center;
     cursor: pointer;
-  }
-  .allProject .load-more .btn{
+}
+
+.allProject .load-more .btn {
     background-color: #0a192f;
     color: lightgreen;
     border: 1px solid rgb(197, 240, 197);
     padding: 5px;
     width: 150px;
     border-radius: 3px;
-  }
+}
 
 
-@media (max-width: 768px){
- 
-    .menuItem{
+@media (max-width: 768px) {
+
+    .menuItem {
         display: none;
     }
-    .menuBtn{
+
+    .menuBtn {
         display: block;
         margin-right: 50px;
     }
-    .heroLeft{
+
+    .heroLeft {
         display: none;
     }
-    .heroRight{
+
+    .heroRight {
         display: none;
     }
-    .parentSection{
+
+    .parentSection {
         margin-left: 0px;
         margin-right: 0px;
         width: 1400px;
-    } 
-    .about{
+    }
+
+    .about {
         margin: 0px 100px 0px 100px;
     }
-    .about .aboutInfo{
+
+    .about .aboutInfo {
         display: flex;
         flex-direction: column;
     }
-    .misai1{
+
+    .misai1 {
         padding-top: 50px;
         margin-right: 217px;
         margin-left: 100px;
     }
-    
+
 }
 
-@media (max-width: 450px){
-    .navWrapper{
+@media (max-width: 450px) {
+    .navWrapper {
         padding: 70px 100px;
         height: 200px;
     }
-    .logo{
-        height: 90px;
-        width: 90px;
-    }
-    .menuBtn{
+
+    .logo {
         height: 90px;
         width: 90px;
     }
 
-    .hero{
+    .menuBtn {
+        height: 90px;
+        width: 90px;
+    }
+
+    .hero {
         margin: 400px 100px 0px 0px;
-        
-    }
-   .hero .heroContent{
-       margin-left: 250px;   
-   }
-   .heroContent h4{
-    font-size: 100px;
-   }
-   .heroContent h1{
-    font-size: 150px;
-    margin-top: 50px;
-   }
-    .hero .myInfo{
-    width: 100%;
-   }
-   .myInfo p{
-    font-size: 70px;
 
-   }
-   .hero button{
-    font-size: 70px;
-   }
-   .about{
-    margin: 550px 100px 0px 100px;
-    width: 100%;
-   }
-   .about h1{
-    margin-left: 50px;
-    font-size: 120px;
-   }
-   .about h1::after{
-    height: 4px;
-    margin-left: 640px;
-    bottom: 30px;  
-   }
-   .about .aboutInfo p{
-    margin-left: 45px;
-    font-size: 70px;
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-   }
-   .about .aboutInfo .imgShape{
-    height: 900px;
-    width: 900px;
-    margin-left: 150px;
-   }
-   .about .aboutInfo .imgShape img{
-    height: 900px;
-    width: 900px;
-   }
-   .skills{
-    margin-top: 450px;
-    margin-left: 80px;
-   }
-   .about .skills ul{
-    margin-left: 150px;
-    margin-top: 80px;
-   }
-   .about .skills ul li{
-    font-size: 60px;
-   }
-   .experience{
-    margin: 678px 192px 50px 87px;
-   }
-   .experience .container{
-    width: 90%;
-   }
-   .misai2{
-    padding-top: 150px;
-    margin-right: 217px;
-    margin-left: 100px;
-   }
-   .misai2 h1{
-    font-size: 100px;
-    margin-left: 100px;
-   }
-   .experience h1::after{
-    width: 350px;
-    height: 4px;
-    margin-left: 42rem;
-    bottom: 1.5rem;
     }
-    .misai2 .tab_content{
+
+    .hero .heroContent {
+        margin-left: 250px;
+    }
+
+    .heroContent h4 {
+        font-size: 100px;
+    }
+
+    .heroContent h1 {
+        font-size: 150px;
+        margin-top: 50px;
+    }
+
+    .hero .myInfo {
+        width: 100%;
+    }
+
+    .myInfo p {
+        font-size: 70px;
+
+    }
+
+    .hero button {
+        font-size: 70px;
+    }
+
+    .about {
+        margin: 650px 100px 0px 80px;
+        width: 100%;
+    }
+
+    .about h1 {
+        margin-left: 50px;
+        font-size: 120px;
+    }
+
+    .about h1::after {
+        height: 4px;
+        margin-left: 640px;
+        bottom: 30px;
+    }
+
+    .about .aboutInfo {
+        width: 1200px;
+    }
+
+    .about .aboutInfo p {
+        margin-left: 45px;
+        font-size: 70px;
+        margin-top: 50px;
+        width: 93%;
+    }
+
+    .about .aboutInfo .imgShape {
+        height: 900px;
+        width: 900px;
+        margin-left: 150px;
+    }
+
+    .about .aboutInfo .imgShape img {
+        height: 900px;
+        width: 900px;
+    }
+
+    .skills {
+        margin-top: 450px;
+        margin-left: 80px;
+    }
+
+    .about .skills ul {
+        margin-left: 150px;
         margin-top: 80px;
     }
-    .misai2 .tab_box{
+
+    .about .skills ul li {
+        font-size: 60px;
+    }
+
+    .experience {
+        margin: 678px 192px 50px 87px;
+    }
+
+    .experience .container {
+        width: 95%;
+    }
+
+    .misai2 {
+        padding-top: 150px;
+        margin-right: 217px;
+        margin-left: 100px;
+    }
+
+    .misai2 h1 {
+        font-size: 100px;
+        margin-left: 100px;
+    }
+
+    .experience h1::after {
+        width: 350px;
+        height: 4px;
+        margin-left: 42rem;
+        bottom: 1.5rem;
+    }
+
+    .misai2 .tab_content {
+        margin-top: 80px;
+    }
+
+    .misai2 .tab_box {
         margin-top: 90px;
     }
-   .misai2 .tab_content h2{
-    font-size: 90px;
-   }
-   .misai2 .tab_content h5{
-    font-size: 60px;
-    margin-bottom: 30px;
-   }
-   .tabInfoFlex p{
-    font-size: 60px;
-    text-align: justify;
-   }
-   .arrow{
-    height: 30px;
-    width: 30px;
-   }
-   .experience .container .tab_box .line{
-    margin-top: 150px;
-   }
-   .experience .container .tab_box .tab_button{
-    font-size: 50px;
-   }
-   .skills .misai{
-    padding-top: 40px;
-   }
-   .skills .skills-row {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 150px;
 
-   }
-   .skills .skills-row .skills-column{
-    width: 90%;
-    margin: 30px;
-   }
-   .misai .spanTitle{
-    margin-left: 190px;
-    font-size: 120px;
-   }
-   .skills h2::after{
-    width: 290px;
-    height: 4px;
-    margin-left: 50rem;
-    bottom: 15px;
-   
-  }
-  .skills-row .title{
-    font-size: 70px;
-  }
-  .skills-content .progres h3{
-    font-size: 2.5rem;
-  }
-  .skills span{
-    font-size: 50px;
-  }
+    .misai2 .tab_content h2 {
+        font-size: 90px;
+    }
+
+    .misai2 .tab_content h5 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .tabInfoFlex p {
+        font-size: 60px;
+        text-align: justify;
+    }
+
+    .arrow {
+        height: 30px;
+        width: 30px;
+    }
+
+    .experience .container .tab_box .line {
+        margin-top: 150px;
+    }
+
+    .experience .container .tab_box .tab_button {
+        font-size: 50px;
+    }
+
+    .skills .misai {
+        padding-top: 40px;
+    }
+
+    .skills .skills-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 150px;
+
+    }
+
+    .skills .skills-row .skills-column {
+        width: 90%;
+        margin: 30px;
+    }
+
+    .misai .spanTitle {
+        margin-left: 190px;
+        font-size: 120px;
+    }
+
+    .skills h2::after {
+        width: 290px;
+        height: 4px;
+        margin-left: 50rem;
+        bottom: 15px;
+
+    }
+
+    .skills-row .title {
+        font-size: 70px;
+    }
+
+    .skills-content .progres h3 {
+        font-size: 2.5rem;
+    }
+    .skills span {
+        font-size: 50px;
+    }
+    .active1{
+        display: block;
+    }
+    .menuItem {
+        height: 2950px;
+        width: 70%;
+        text-align: center;
+        background-color: rgb(3, 71, 94);
+        margin-top: 1700px;
+        margin-left: -550px;
+    }
+    .menuItem .btnn1{
+        display: block;
+        margin-top: 1000px;
+    }
+    .btnn1 .closeBtn{
+        height: 80px;
+        width: 80px;
+    }
+    .menuItem .menuLinks{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .menuItem .menuLinks a{
+        font-size: 60px;
+        padding: 10px;
+    }
+    .menuItem .menuLinks button{
+        width: 300px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+       
+    }
 
 
 
@@ -1015,23 +1167,11 @@ html{
 
 
 
+    .projects {
+        margin-top: 750px;
 
+    }
 
-  .projects{
-    margin-top: 750px;
-
-  }    
-
-
-
-
-
-}
-  
-
-
-
- 
 
 
 
