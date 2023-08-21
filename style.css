@@ -428,7 +428,7 @@ html {
 }
 
 .skills {
-    margin: 100px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     min-height: auto;
 }
 
@@ -533,12 +533,9 @@ html {
 
 
 /*-----------------------------projects section--------------------------*/
-
-.projects {
+.projects{
     margin-top: 100px;
-
 }
-
 .projects h1 {
     color: #ffffff;
     font-size: 35px;
@@ -1160,17 +1157,6 @@ html {
        
     }
 
-
-
-
-
-
-
-
-    .projects {
-        margin-top: 750px;
-
-    }
 
 
 
